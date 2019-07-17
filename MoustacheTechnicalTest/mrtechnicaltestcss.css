@@ -1,0 +1,156 @@
+﻿h1, h2, h3, h4, h5, h6, div, span, p, body {
+    color: #888;
+}
+
+.sm-padding-bottom {
+    padding-bottom: 10px;
+}
+
+.md-padding-bottom {
+    padding-bottom: 20px;
+}
+
+.lg-padding-bottom {
+    padding-bottom: 30px;
+}
+
+.content-title, .price {
+    color: #222;
+}
+
+.header-nav {
+    margin-top: 20px;
+    background-color: #F6F6F7;
+    height: 40px;
+}
+
+.header-nav .container .row {
+    float: right;
+}
+
+.mini-cart {
+    padding: 6px;
+    padding-bottom: 10px;
+    margin-right: 20px;
+    position: relative;
+}
+
+.mini-cart:hover {
+    border: 1px solid #888;
+    border-bottom: 0;
+    background-color: #fff;
+    color: #222;
+}
+
+.mini-cart-text {
+    display: none;
+}
+
+.mini-cart-mobile {
+    display: inline-block;
+}
+
+.mini-cart-detail {
+    width: 300px;
+    height: auto;
+    position: absolute;
+    right: 0;
+    top: 40px;
+    border: 1px solid #888;
+    padding: 10px;
+    background-color: #fff;
+    z-index: 1;
+    display: none;
+}
+
+.mini-cart:hover .mini-cart-detail {
+    display: inline-block;
+}
+
+.mini-cart-detail .col {
+    padding: 0;
+}
+
+.empty-cart {
+    text-align: center;
+}
+
+.cart-item-img, .cart-item-detail {
+    display: inline-block;
+}
+
+.cart-item-img {
+    padding: 0;
+}
+
+.cart-item-detail {
+    vertical-align: middle;
+}
+
+.classic-tee-small, .classic-tee-medium, .classic-tee-large {
+    padding: 20px 0;
+}
+
+.content {
+    padding: 40px 0;
+}
+
+.size-text {
+    text-transform: uppercase;
+}
+
+.required-validation {
+    color: #C90000;
+}
+
+.selected-size-text {
+    font-weight: 600;
+    color: #222;
+}
+
+.size-btn {
+    text-align: center;
+    border: 1px solid #888;
+    display: inline-block;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.size-btn.selected {
+    border: 2px solid #222;
+    color: #222;
+    font-weight: 700;
+}
+
+.add-to-cart-btn {
+    background-color: #fff;
+    border: 2px solid #222;
+    padding: 5px 30px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    transition: 0.2s;
+}
+
+.add-to-cart-btn:hover {
+    background-color: #222;
+    color: #fff;
+}
+
+@media only screen and (min-width: 768px) {
+    .mini-cart-text {
+        display: inline-block;
+    }
+
+    .mini-cart-mobile {
+        display: none;
+    }
+
+    .content-title {
+        border-bottom: 1px solid #CCC;
+    }
+
+    .price {
+        border-bottom: 1px solid #CCC;
+    }
+}

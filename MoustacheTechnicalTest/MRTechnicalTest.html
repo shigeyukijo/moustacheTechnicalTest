@@ -1,0 +1,92 @@
+﻿<!DOCTYPE html>
+<html>
+    <head>
+        <title>Moustache Republic Technical Test</title>
+	    <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <!--CSS Script-->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link href="mrtechnicaltestcss.css" rel="stylesheet" />
+
+        <!--Javascript-->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+        <script src="mrtechnicaltestscript.js"></script>
+
+    </head>
+    <body>
+
+        <!--Top Navigation-->
+        <div class="header-nav">
+            <div class="container">
+                <div class="row">
+                    <div class="mini-cart">
+                        <!--Mini Cart Desktop Version (Text)-->
+                        <span class="mini-cart-text">My Cart</span>
+
+                        <!--Mini Cart Mobile Version (Icon)-->
+                        <i class="fa fa-shopping-cart mini-cart-mobile"></i>
+
+                        <!--Mini Cart Quantity for both layout-->
+                        <span class="cart-quantity-display">( <span id="cart-quantity" data-quantity="0">0</span> )</span>
+
+                        <!--Mini Cart Detail-->
+                        <div class="mini-cart-detail">
+                            <div class="col col-12">
+                                <!--If Cart is empty, controlled by javascript-->
+                                <div class="col col-12 empty-cart">YOUR CART IS EMPTY</div>
+
+                                <!--If Cart is full, controlled by javascript-->
+                                <div class="col col-12 full-cart">
+                                    <!--Item Details will be added here through javascript-->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+
+        <!--Content Section-->
+        <div class="content">
+            <div class="container">
+                <div class="row">
+                    <!--Product Image-->
+                    <div class="col col-12 col-md-6">
+                        <img src="classic-tee.jpg" class="img-responsive col col-12 col-md-10 md-padding-bottom" alt="Classic Tee" />
+                    </div>
+                    <div class="col col-12 col-md-6">
+                        <!--Product Title-->
+                        <h2 class="content-title col col-12 lg-padding-bottom">Classic Tee</h2>
+
+                        <!--Product Price-->
+                        <h6 class="price col col-12 sm-padding-bottom">$75.00</h6>
+
+                        <!--Product Description-->
+                        <p class="description col col-12">Dolor sit amet, consectetur adipiscing elit. Haec et tu ita posuisti, et verba vestra sunt. Quod aeutem ratione actum est, id officium appellamus dolor sit amet, 
+                        consectetur adipiscing elit. Haec et tu ita posuisti, et verba vestra sunt. Quod aeutem ratione actum est, id officium appellamus</p>
+                        
+                        <!--Size Section-->
+                        <div class="size col col-12 lg-padding-bottom">
+                            <p class="size-text"><strong>Size</strong><span class="required-validation">*</span> <span class="selected-size-text"></span></p>
+                            <div class="col col-2 col-md-1 size-btn s-btn" data-selected-value="S">S</div>
+                            <div class="col col-2 col-md-1 size-btn m-btn" data-selected-value="M">M</div>
+                            <div class="col col-2 col-md-1 size-btn l-btn" data-selected-value="L">L</div>
+                        </div>
+
+                        <!--Add To Cart Button Section-->
+                        <div class="add-btn-section col col-12">
+                            <input type="submit" class="add-to-cart-btn" id="add-to-cart" value="Add To Cart"/>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </body>
+</html>
